@@ -59,7 +59,7 @@ class User{
 <?php include("includes/NavBar.php");?>
 <body>
     <div class="main-content container">
-    <div class="row">
+        <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h1 class="text-center text-dark mt-5">Et si on se faisait un Compte ??</h1>
                 <div class="card my-5" id="test1234">
@@ -80,10 +80,10 @@ class User{
                                 <i class="password-icon" data-feather="eye"></i>
                                 <i class="password-icon" data-feather="eye-off"></i>
                             </div>
-                            <script src="https://unpkg.com/feather-icons"></script>
-                            <script>
-                            feather.replace();
-                            </script>
+                                <script src="https://unpkg.com/feather-icons"></script>
+                                <script>
+                                feather.replace();
+                                </script>
                         </div>
                         <div class="mb-3" id ="test">
                             <input type="password" class="form-control" id="password2" placeholder="Confirmation de Mot de Passe" name="inscriptionConfirmMdp">
@@ -99,18 +99,18 @@ class User{
                         <div class="mb-3" id ="test">
                             <input type="text" class="form-control" id="admin" placeholder="admin?" name="admin">
                         </div>
-                        <?php
-                        if ((($_POST['inscriptionMdp']) !== ($_POST['inscriptionConfirmMdp'])) ){
-                            echo ('<div class="alert alert-danger" role="alert">
-                            les mots de passe ne sont pas identiques.</div>');
-                        }
+                                            <?php
+                                            if ((($_POST['inscriptionMdp']) !== ($_POST['inscriptionConfirmMdp'])) ){
+                                                echo ('<div class="alert alert-danger" role="alert">
+                                                les mots de passe ne sont pas identiques.</div>');
+                                            }
 
-                            if ($verifEmail !== false && (!empty($_POST["inscriptionEmail"]))){
-                                echo ('<div class="alert alert-danger" role="alert">
-                                bordel change de mail, il est déja pris !!</div>');
-                            }
-                        
-                        ?>
+                                                if ($verifEmail !== false && (!empty($_POST["inscriptionEmail"]))){
+                                                    echo ('<div class="alert alert-danger" role="alert">
+                                                    bordel change de mail, il est déja pris !!</div>');
+                                                }
+                                            
+                                            ?>
                         <div class="text-center">
                             <button type="submit"class="btn btn-color px-5 mb-5 w-100">Save</button>
                         </div>
@@ -118,7 +118,7 @@ class User{
                         </div>
                     </form>
                 </div>
-                
+
 
             </div>
         </div>

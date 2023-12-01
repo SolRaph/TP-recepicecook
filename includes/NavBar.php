@@ -1,10 +1,9 @@
-<nav class="navbar navbar-inverse navbar-global ">
+<nav class="navbar navbar-inverse navbar-global">
     <div class="container-fluid">
-        <div class="navbar-header display-flex">
+        <div class="navbar-header">
             <a class="navbar-brand" href="index.php"><button type="button" >
             <span class="sr-only"> Home </span>
             </button></a>
-            
         </div>
     </div>
 </nav>

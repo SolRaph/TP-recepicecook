@@ -49,22 +49,22 @@ if (!empty($_POST["adressMail"]) && !empty($_POST["Mdp"])) {
 <body>
 
 <div class="main-content container">
-<div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2 class="text-center text-dark mt-5">Connecte toi</h2>
-                <div id="test1234" class="card my-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center text-dark mt-5">Connecte toi</h1>
+            <div id="test1234" class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="POST">
+                <form class="card-body cardbody-color p-lg-5" method="POST">
                     
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="Username" aria-describedby="emailHelp"
-                                placeholder="Adresse email" name="adressMail">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Adresse email" name="adressMail">
+                    </div>
+                    <div class="mb-3" id="test">
+                        <input type="password" id="password" class="form-control" placeholder="Mot de Passe" name="Mdp">
+                        <div class="password-icon">
+                            <i class="password-icon" data-feather="eye" id ="oeil2"></i>
+                            <i class="password-icon" data-feather="eye-off" id="pasoeil2"></i>
                         </div>
-                        <div class="mb-3" id="test">
-                            <input type="password" id="password" class="form-control" placeholder="Mot de Passe" name="Mdp">
-                                <i class="password-icon" data-feather="eye" id ="oeil2"></i>
-                                <i class="password-icon" data-feather="eye-off" id="pasoeil2"></i>
-                            </div>
                             <script src="https://unpkg.com/feather-icons"></script>
                             <script>
                             feather.replace();
