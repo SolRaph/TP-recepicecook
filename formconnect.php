@@ -44,7 +44,7 @@ if (!empty($_POST["adressMail"]) && !empty($_POST["Mdp"])) {
     require("includes/head-html.php");
     
     ?>
-
+<script type="text/javascript" src="cook.js" defer></script>
 <?php include("includes/NavBar.php");?>
 <body>
 
@@ -89,7 +89,8 @@ if (!empty($_POST["adressMail"]) && !empty($_POST["Mdp"])) {
                             }
                         ?>
                         <div class="text-center"><button type="submit"
-                                class="btn btn-color px-5 mb-5 w-100">connexion</button></div>
+                                class="btn btn-color px-5 mb-5 w-100">connexion</button>
+                        </div>
                         <div id="emailHelp" class="form-text text-center mb-5 text-dark">Pas encore de compte ? <a href="register.php" class="text-dark fw-bold"> Créer un compte !</a>
                         </div>
                     </form>

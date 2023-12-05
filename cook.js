@@ -29,3 +29,4 @@ pasoeil2.addEventListener("mouseout", () => {
 });
 
 let btn = document.querySelector("#valider")
+

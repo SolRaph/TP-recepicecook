@@ -1,8 +1,8 @@
 .navbar-global {
-	background-color:  #0e1c36;
+	background-color: #0e1c36;
 	position: fixed;
 	width: 100%;
-    top: 0;
+	top: 0;
 }
 
 .navbar-global .navbar-brand {
@@ -96,87 +96,92 @@
 	margin-top: 60px;
 	margin-left: 200px;
 	padding: 20px;
-    
 }
 
 .collapsed + .main-content {
 	margin-left: 60px;
 }
 
-
-#nav1{
-    margin-top:2rem;
-
+#nav1 {
+	margin-top: 2rem;
 }
-#nav2{
-    margin-bottom:5rem;
+#nav2 {
+	margin-bottom: 5rem;
 }
-body{
-    background-image:url("image/cooking.jpg");
+body {
+	background-image: url('image/FD/cooking.jpg');
 	background-size: center;
 	background-size: 90%;
 	background-position-x: 12rem;
-	background-attachment: local,scroll;	
+	background-attachment: local, scroll;
 	background-repeat: no-repeat;
-	
-	
-	
 }
 .btn-color {
-    background-color: #0e1c36;
-    color: #fff;
-
+	background-color: #0e1c36;
+	color: #fff;
 }
 
 .profile-image-pic {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
 }
-#test1234{
-	border-radius:50px 10px 50px 10px;
-
+#test1234 {
+	border-radius: 50px 10px 50px 10px;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #listeaafficher {
-    margin-bottom: 10rem;
+	margin-bottom: 10rem;
 }
 
 #test {
-    position: relative;
+	position: relative;
 }
 
 .password-icon {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    width: 20px;
-    color: #8a2222;
-    transition: all 0.2s;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	width: 20px;
+	color: #8a2222;
+	transition: all 0.2s;
 }
 
 .password-icon:hover {
-    cursor: pointer;
-    color: #8d47ff;
+	cursor: pointer;
+	color: #8d47ff;
 }
-#return{
-    margin-top: 3rem;
-}
-
-#deco{
-    border: none;
-    text-decoration: none;
-    color: #8a2222;
+#return {
+	margin-top: 3rem;
 }
 
-#recette1, #recette2{
-    margin-top: 3rem;
+#deco {
+	border: none;
+	text-decoration: none;
+	color: #8a2222;
 }
 
+#recette1,
+#recette2 {
+	margin-top: 3rem;
+}
+#carouselExampleCaptions{
+	width: 100%;
+	max-width: 50rem;
+	margin: auto auto;
+}
+
+img{
+	max-height: 30rem;
+}
+
+#img2{
+	width: 50px;
+}

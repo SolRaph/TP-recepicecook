@@ -1,10 +1,12 @@
 <nav class="navbar navbar-inverse navbar-global">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php"><button type="button" >
-            <span class="sr-only"> Home </span>
-            </button></a>
+            <a class="navbar-brand" href="index.php"><button type="button" class="btn btn-primary">Home</button></a>
         </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="LogOut.php"><button type="button" class="btn btn-primary">Log-Out</button></a>
+        </div>
+        
     </div>
 </nav>
 <nav class="navbar-primary d-flex flex-column justify-content-between">

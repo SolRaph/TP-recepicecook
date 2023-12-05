@@ -55,7 +55,7 @@ class User{
     require("includes/head-html.php");
     
     ?>
-
+<script type="text/javascript" src="cook.js" defer></script>
 <?php include("includes/NavBar.php");?>
 <body>
     <div class="main-content container">
