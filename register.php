@@ -11,7 +11,7 @@ class User{
     public $password;
     }
 
-    if (!empty($_POST["inscriptionNom"]) && !empty($_POST["inscriptionEmail"]) && !empty($_POST["inscriptionMdp"]) && !empty($_POST["inscriptionConfirmMdp"]) && !empty($_POST["admin"])) {
+    if (!empty($_POST["inscriptionNom"]) && !empty($_POST["inscriptionEmail"]) && !empty($_POST["inscriptionMdp"]) && !empty($_POST["inscriptionConfirmMdp"])) {
 
         // echo("controle");
         $sql ="SELECT * FROM `acces` WHERE `mail`= :inscriptionEmail";
@@ -25,7 +25,7 @@ class User{
                 $InEmail = $_POST["inscriptionEmail"];
                 $InMdp = password_hash ($_POST["inscriptionMdp"],PASSWORD_DEFAULT);
                 $InConfirmMdp = $_POST["inscriptionConfirmMdp"];
-                $InAdmin = $_POST["admin"];
+                $InAdmin = "user";
 
                 
             // var_dump('$InNom','$InMdp','$InEmail','$InConfirmMdp','$InAmin');
@@ -33,12 +33,12 @@ class User{
                     
                 }
                 else {
-                    $SQL= "INSERT INTO `acces`(`login`, `mail`, `password`, `admin`) VALUES (:inscriptionNom,:inscriptionEmail,:inscriptionMdp,:admin)";
+                    $SQL= "INSERT INTO `acces`(`login`, `mail`, `password`, `type`) VALUES (:inscriptionNom,:inscriptionEmail,:inscriptionMdp,:types)";
                     $query = $db->prepare($SQL);
                     $query->bindvalue(":inscriptionNom",$InNom,PDO::PARAM_STR);
                     $query->bindvalue(":inscriptionEmail",$InEmail,PDO::PARAM_STR);
                     $query->bindvalue(":inscriptionMdp",$InMdp,PDO::PARAM_STR);
-                    $query->bindvalue(":admin",$InAdmin,PDO::PARAM_STR);
+                    $query->bindvalue(":types",$InAdmin,PDO::PARAM_STR);
                     $query->execute();
                 }}
         
@@ -96,9 +96,9 @@ class User{
                             feather.replace();
                             </script>
                         </div>
-                        <div class="mb-3" id ="test">
-                            <input type="text" class="form-control" id="admin" placeholder="admin?" name="admin">
-                        </div>
+                        <!-- <div class="mb-3" id ="test">
+                            <input type="text" class="form-control" id="admin" placeholder="admin?" name="type">
+                        </div> -->
                                             <?php
                                             if ((($_POST['inscriptionMdp']) !== ($_POST['inscriptionConfirmMdp'])) ){
                                                 echo ('<div class="alert alert-danger" role="alert">
@@ -121,7 +121,9 @@ class User{
 
 
             </div>
-        </div>
+        </div><?php
+include("includes/footer.php");
+        ?>
     </div>
 </body>
 </html>

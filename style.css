@@ -185,3 +185,6 @@ img{
 #img2{
 	width: 50px;
 }
+.listeingredients{
+	display: flex;
+}

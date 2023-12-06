@@ -4,6 +4,7 @@
 include("includes/LoginBDD.php");
 $title = "Connect";
 
+
 if (!empty($_POST["adressMail"]) && !empty($_POST["Mdp"])) {
     
 
@@ -98,7 +99,11 @@ if (!empty($_POST["adressMail"]) && !empty($_POST["Mdp"])) {
 
             </div>
         </div>
+        <?php
+include("includes/footer.php");
+        ?>
 </div>
 
 </body>
+
 </html>

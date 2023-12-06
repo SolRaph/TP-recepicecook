@@ -1,0 +1,16 @@
+// Traitement du formulaire lorsque soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupération des ingrédients depuis le formulaire
+    $ingredients = $_POST['inputingredients'];
+
+    // Boucle pour insérer chaque ingrédient dans la base de données
+    foreach ($ingredients as $ingredient) {
+        // Utilisation de requêtes préparées pour éviter les problèmes d'injection SQL
+        $stmt = $conn->prepare("INSERT INTO `ingredients` (`ingredients`) VALUES (:ingredients)");
+        $stmt->bind_param("s", $ingredient);
+        $stmt->execute();
+        $stmt->close();
+    }
+
+    echo "Ingrédients ajoutés avec succès !";
+}

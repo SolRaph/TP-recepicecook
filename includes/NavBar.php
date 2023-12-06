@@ -1,7 +1,15 @@
+
+
+
+
+
 <nav class="navbar navbar-inverse navbar-global">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php"><button type="button" class="btn btn-primary">Home</button></a>
+            <a class="navbar-brand" href="pageadmin.php"><button type="button" class="btn btn-primary">Hakuna-Matata</button></a>
+        </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.php"><img src="image/FD/logo.png" width="30px" alt="logo">  Les Recettes de Timon et Pumba</a>
         </div>
         <div class="navbar-header">
             <a class="navbar-brand" href="LogOut.php"><button type="button" class="btn btn-primary">Log-Out</button></a>
@@ -16,6 +24,11 @@
                 <a href="starters.php"><span class="glyphicon glyphicon-cog"></span><span class="nav-label">Les Entrées</span></a>
                 <a href="mains.php"><span class="glyphicon glyphicon-film"></span><span class="nav-label">Les Plats</span></a>
                 <a href="desserts.php"><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Les desserts</span></a>
+                <a href=""><span class="glyphicon glyphicon-calendar"></span><span class="nav-label">Search your recipe :</span></a>
+                <form method="GET" action="recherche.php">
+                    <input class="mx-1" type="text" name="search">
+                    <button class="btn btn-primary mx-5 mt-1" type="bouton">search</button>
+                </form>
             </li>
         </ul>
     </div>
@@ -28,4 +41,8 @@
             </li>
         </ul>
     </div>
+    
+
 </nav>
+
+

@@ -23,53 +23,41 @@ $title = "Desserts";
         <div class="col-md-10 offset-md-1">
             <h1 class="text-center text-dark mt-5">Desserts</h1>
             <div id="test1234" class="card my-5">
-            <div class="container text-center">
-                <div class="row">
+            <div class="container text-center ">
+                <div class="row ">
                     <div class="col">
-                    <h3>Name</h3>
+                    <h2>Name</h2>
                     </div>
                     <div class="col">
-                    <h3>Pics</h3>
-                    <img src="" alt="" srcset="" width>
+                    <h2>Pics</h2>
                     </div>
                     
                 </div>
             </div>
             <br>
             <div class="container text-center">
-                <div class="row ">
-                    <div class="col-md-6">
-                    <?php
-                    #recherche dans les recettes de TOUTES les entrees
-                    $sql = "SELECT  `titre-recette`FROM `recipes` WHERE `category`= 'Desserts'";
+                <div class="row align-items-center mt-2">
+                <?php
+                    #recherche dans les recettes de TOUTS les desserts
+                    $sql = 'SELECT`titre-recette`, `images`, `id-recipe` FROM `recipes` WHERE `etat`=:etat AND `category`=:categorie';
                     $query = $db->prepare($sql);
+                    $query->bindvalue(":etat","ok",PDO::PARAM_STR);
+                    $query->bindvalue(":categorie","desserts",PDO::PARAM_STR);
                     $query->execute();
                     $NameStarters = $query->fetchAll();
                     foreach ($NameStarters as $NameStarter) { 
-                        echo($NameStarter['titre-recette'].'<br><br>');
+                        echo('<div class="col-md-6 mb-3 "><a style="color:black" href="afficheRecette.php?id='.$NameStarter['id-recipe'].'">'.$NameStarter['titre-recette'].'</div><div class="col-md-6 mb-3 "><img width="100px" src="'.$NameStarter['images'].'"></div>');
                     }
                     ?>
-                    </div>
-                    <div class="col-md-6">
-                    <?php
-                    #recherche dans les recettes de TOUTES les entrees
-                    $sql = "SELECT  `images` FROM `recipes` WHERE `category`= 'Desserts'";
-                    $query = $db->prepare($sql);
-                    $query->execute();
-                    $images = $query->fetchAll();
-                    foreach ($images as $image) { 
-                        echo("<img width='75px' src='".$image['images']."'");
-                    
-                    }
-                    ?>
-                    </div>
                     
                     
                 </div>
             </div>
         </div>
 </div>
-
+<?php
+include("includes/footer.php");
+        ?>
 
 </body>
 </html>
