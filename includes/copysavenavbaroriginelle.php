@@ -1,4 +1,3 @@
-<div id="nav">
 <nav class="navbar navbar-inverse navbar-global">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -38,10 +37,7 @@
                 <a href="recipes-creation.php"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">Ajouter votre recette</span></a>
             </li>
         </ul>
-
     </div>
-
+    
 
 </nav>
-
-</div> 

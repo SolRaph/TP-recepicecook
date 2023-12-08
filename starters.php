@@ -28,7 +28,7 @@ $title = "Starters";
                     <div class="col">
                     <h2>Name</h2>
                     </div>
-                    <div class="col">
+                    <div id="zou" class="col">
                     <h2>Pics</h2>
                     </div>
                     

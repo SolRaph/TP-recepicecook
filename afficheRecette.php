@@ -100,11 +100,12 @@ require("includes/head-html.php");
                             $query->bindValue(":truc1", $controleAdmin['id'], PDO::PARAM_STR);
                             $query->bindValue(":muche1", $idrecette, PDO::PARAM_STR);
                             $query->execute();
-                            header("Refresh:0");
-                            
-                            
-                            
-                            // echo($idrecette);
+
+                            header("refresh:0"); // Redirige vers la même page
+                            exit();
+                            echo ('<script>window.location.reload(true);</script>');
+                            exit();
+                                                       
                         } else {
                             echo ("Vous avez déjà noté cette recette ; <br> ");
                             echo (' Vous lui avez donné la note de : ' . $CandiceTheSupremeLeader["note"]);

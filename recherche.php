@@ -22,10 +22,10 @@ $title = "recherche";
                     <div class="col-md-5">
                     <h2>Name</h2>
                     </div>
-                    <div class="col-md-5">
+                    <div id="zou" class="col-md-5">
                     <h2>Pics</h2>
                     </div>
-                    <div class="col-md-2">
+                    <div id="zou" class="col-md-2">
                     <h2>Type</h2>
                     </div>
                     

@@ -12,9 +12,8 @@ $title = "Home";
 
     <?php require("includes/head-html.php");?>
 
-<!-- <?php include("includes/NavBar.php");?> -->
-<?php include("includes/NAVBARTEST.php");?>
-
+<?php include("includes/NavBar.php");?>
+<!-- <?php include("includes/NAVBARTEST.php");?> -->
 
 <body>
 <div class="main-content container">

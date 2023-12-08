@@ -9,9 +9,9 @@
 	color: white;
 }
 
-.navbar-global .navbar-user > li > a {
-	color: white;
-}
+
+
+
 
 .navbar-primary {
 	background-color: #333;
@@ -108,16 +108,7 @@
 #nav2 {
 	margin-bottom: 5rem;
 }
-body{
-	background-image: url('image/FD/cooking.jpg');
-	background-size: center;
-	background-size: 90%;
-	height: 100vh;
-	
-	background-position-x: 12rem;
-	background-attachment: local, scroll;
-	background-repeat: no-repeat;
-} 
+
 .btn-color {
 	background-color: #0e1c36;
 	color: #fff;
@@ -190,39 +181,45 @@ img{
 .listeingredients{
 	display: flex;
 }
-#nav select {
-    display: none;
+#navblock{
+	display: none;
 }
-                      /* TEST /*
+
+@media only screen and (max-width: 950px) {
+
+	
+	body{
+		background-image: url('image/FD/cooking.jpg');
+		
+		
+	} 
+	#navblock{
+		display: block;
+		
+	}
+
+	#navcolumn{
+		display:none;
+		
+		
+	}
+	#navprime{
+		display:none;
+	}
+	#zou{display: none;}
 
 
-/* Styles pour les écrans étroits (moins de 900px) */
-@media (max-width: 700px) {
-    .navbar-primary {
-        flex-direction: column;
-    }
-
-    .navbar-primary-menu {
-        display: none;
-    }
-
-    .navbar-primary-menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 50px; /* Ajustez ceci en fonction de la hauteur de votre barre de navigation */
-        background-color: #333; /* Couleur de fond du menu déroulant */
-        width: 50%;
-    }
-
-    .navbar-primary-menu li {
-        margin: 10px 0;
-    }
-
-    .navbar-primary-menu a {
-        color: #fff; /* Couleur du texte du menu déroulant */
-        text-decoration: none;
-    }
 }
 
 
+@media only screen and (min-width: 951px) {
+body{
+	background-image: url('image/FD/cooking.jpg');
+	background-size: center;
+	background-size: 90%;
+	height: 100vh;
+	
+	background-position-x: 12rem;
+	background-attachment: local, scroll;
+	background-repeat: no-repeat;
+} }
