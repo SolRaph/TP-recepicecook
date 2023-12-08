@@ -3,7 +3,7 @@
 // ini_set('display_errors', 1);
 include("includes/LoginBDD.php");
 $title = "admin";
-$etat = "admin"   ; 
+$etat = "admin"; 
 session_start();
 $sql = "SELECT `type` FROM `acces` WHERE `mail` = :idu";
     $query = $db->prepare($sql);

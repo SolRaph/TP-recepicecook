@@ -19,11 +19,14 @@ $title = "recherche";
             <div id="test1234" class="card my-5">
             <div class="container text-center ">
                 <div class="row ">
-                    <div class="col">
+                    <div class="col-md-5">
                     <h2>Name</h2>
                     </div>
-                    <div class="col">
+                    <div class="col-md-5">
                     <h2>Pics</h2>
+                    </div>
+                    <div class="col-md-2">
+                    <h2>Type</h2>
                     </div>
                     
                 </div>
@@ -33,12 +36,16 @@ $title = "recherche";
                 <div class="row align-items-center mt-2">
                 <?php
                     $search = $_GET['search'];
-                    $sql="SELECT `titre-recette` FROM `recipes` WHERE `titre-recette` LIKE '%$search%'";
+                    $sql="SELECT * FROM `recipes` WHERE `titre-recette` LIKE :recherche";
                         $query = $db->prepare($sql);
+                        $query->bindvalue(":recherche","%$search%",PDO::PARAM_STR);
                         $query->execute();
                         $recherches = $query->fetchAll();
-                        echo("houhou");
-                        ?>                       
+                        foreach ($recherches as $recherche) {
+                            echo('<div class="col-md-5 mb-3 "><a style="color:black" href="afficheRecette.php?id='.$recherche['id-recipe'].'">'.$recherche['titre-recette'].'</div><div class="col-md-5 mb-3 "><img width="150px" src="'.$recherche['images'].'"></div><div class="col-md-2 mb-3 ">'.$recherche['category'].'</div>');
+                        }
+                        ?>
+                        
                     </div>
                 </div>
             </div>

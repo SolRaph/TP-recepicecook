@@ -12,7 +12,8 @@ $title = "Home";
 
     <?php require("includes/head-html.php");?>
 
-<?php include("includes/NavBar.php");?>
+<!-- <?php include("includes/NavBar.php");?> -->
+<?php include("includes/NAVBARTEST.php");?>
 
 
 <body>
@@ -27,22 +28,22 @@ $title = "Home";
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="image/CRS/KA.jpg" class="rounded" alt="...">
+      <img src="image/CRS/KA.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image/CRS/pc.jpg" class="d-block w-100 alt="...">
+      <img src="image/CRS/pc.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image/CRS/sj.jpg" class="d-block w-100 alt="...">
+      <img src="image/CRS/sj.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image/CRS/vv.jpg" class="d-block w-100 alt="...">
+      <img src="image/CRS/vv.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
@@ -55,9 +56,10 @@ $title = "Home";
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div><?php
-include("includes/footer.php");
-        ?>
+</div>
+
+<?php include("includes/footer.php");?>
+
 </div>
 </body>
 </html>

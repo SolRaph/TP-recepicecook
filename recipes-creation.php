@@ -76,7 +76,7 @@ farine  x250g"></textarea>
                         <div class="form-group col mt-3">
                             <label for="TxtRecipe">Description de la recette</label>
                             <textarea type="text" class="form-control" name="TxtRecipe" placeholder="ÉTAPE 1 :
-Dégraisser le canard au four, le laisser refroidir puis l'émietter. Réserver."></textarea>
+Dégraisser le canard au four, le laisser refroidir puis l'émietter. Réserver.">Etapes:</textarea>
                         </div>
                         <div class="text-center mt-5">
                             <button type="submit"class="btn btn-color px-5 mb-5 w-100">Save</button>
